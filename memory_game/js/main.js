@@ -23,7 +23,7 @@ const cards = [
 
 const cardsInPlay = []; {
 let checkForMatch = function() {
-	} if (cardsInPlay[0] === cardsInPlay[1]) {
+	 if (cardsInPlay[0] === cardsInPlay[1]) {
 	  console.log("You found a match!");
 	} else {
 	  console.log("Sorry, try again.");
@@ -31,17 +31,27 @@ let checkForMatch = function() {
 }
 
 let flipCard = function(cardId) {
-	} flipCard(0); {
-	} flipCard(2); {
-		 if (cardsInPlay === 2) {
+	 if (cardsInPlay === 2)
 	} else if (cardsInPlay[0] === cardsInPlay[1]) {
 		alert("You found a match!");
 	} else if (cardsInPlay[0] !== cardsInPlay[1]) {
 		alert("Sorry, try again.")
-
+	}
+};
 	console.log("User flipped " + cards[cardId].rank); 
 	cardsInPlay.push(cards[cardId].rank);
 	checkForMatch();
-	console.log(cards[cardImage]);
-	console.log(cards[suit]);
-}
+	console.log(cards[cardImage])
+	console.log(cards[suit])
+
+	let createBoard = function() {
+		for (let i = 0; i < cards.length; i++) {
+			let newListItem = document.createElement('images/queen-of-hearts.png');
+			let newListItem = document.createElement('images/queen-of-diamonds.png');
+			let newListItem = document.createElement('images/king-of-hearts.png');
+			let newListItem = document.createElement('images/king-of-diamonds.png');
+			cardElement.setAttribute('cardElement', 'src=images/back.png');
+			cardElement.setAttribute('data-id', i);
+		}
+	}
+	creatBoard()
